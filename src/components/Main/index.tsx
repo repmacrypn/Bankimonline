@@ -1,18 +1,13 @@
-import { propertyTown } from 'src/constants/propertyTown'
 import { doYouOwnProperty } from 'src/constants/doYouOwnProp'
 import { propertyType } from 'src/constants/propertyType'
 import { whenToBuyProperty } from 'src/constants/whenToBuy'
 import { Select } from '../Select'
+import { CustomSelectSearch } from '../Select/CustomSelectSearch'
 
 export const Main = () => {
     return (
         <main>
-            <Select
-                placeholder='Выберите город'
-                label='Город покупки недвижимости'
-            >
-                {propertyTown.map(p => <option key={p.id}>{p.town}</option>)}
-            </Select>
+            <CustomSelectSearch />
             <Select
                 placeholder='Выберите период'
                 label='Когда вы планируете оформить ипотеку?'
@@ -32,5 +27,13 @@ export const Main = () => {
                 {doYouOwnProperty.map(p => <option key={p.id}>{p.property}</option>)}
             </Select>
         </main>
+    )
+}
+
+export const CustomSelect = () => {
+    return (
+        <div>
+
+        </div>
     )
 }

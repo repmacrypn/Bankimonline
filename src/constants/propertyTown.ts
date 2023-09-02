@@ -8,7 +8,7 @@ export const propertyTown: IPropertyTown[] = [
     { id: 7, town: 'Варшава' },
 ]
 
-interface IPropertyTown {
+export interface IPropertyTown {
     id: number;
     town: string;
 }
