@@ -3,4 +3,6 @@
 .header {
     font-size: $font-size-xxl;
     line-height: $line-height-main-xxl;
+    margin-bottom: $margin-gap;
+    align-self: flex-start;
 }
