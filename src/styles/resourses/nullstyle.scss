@@ -1,8 +1,11 @@
 @import "./variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     border: 0;
 
     &,
@@ -27,13 +30,13 @@ aside {
 
 html,
 body {
-    width: 100%;
+    width: $width-full;
     overflow-x: hidden;
     font-size: 100%;
     line-height: 1;
-    font-weight: 400;
-    background-color: $gray;
-    color: $black;
+    font-weight: $font-weight-main;
+    background-color: $Background;
+    color: $MainFont;
     scroll-behavior: smooth;
 }
 
@@ -89,7 +92,7 @@ h4,
 h5,
 h6 {
     font-size: inherit;
-    font-weight: 400;
+    font-weight: $font-weight-main;
 }
 
 svg path {

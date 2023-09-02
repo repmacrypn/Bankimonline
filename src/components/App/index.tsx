@@ -1,7 +1,9 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable indent */
+import { Header } from '../Header'
+
 export const App = () => {
-  return (
-    <div>qq</div>
-  )
+    return (
+        <>
+            <Header />
+        </>
+    )
 }
