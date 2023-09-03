@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import styles from './styles.module.scss'
+
 import { IPropertyTown, propertyTown } from 'src/constants/propertyTown'
+
+import styles from './styles.module.scss'
 
 export const CustomSelectSearch = () => {
     const [isVisible, setIsVisible] = useState(false)
