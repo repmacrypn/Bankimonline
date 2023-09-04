@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 
 import { IRangeInput } from './interface'
 
-export const RangeInput = ({ max }: IRangeInput) => {
-    const [numValue, setNumValue] = useState(500000)
+export const RangeInput = ({ min, max, defaultValue }: IRangeInput) => {
+    const [numValue, setNumValue] = useState(defaultValue)
     const [errorMessage, setErrorMessage] = useState('')
 
     const maxValue = Number(max.split(',').join(''))
@@ -26,7 +26,7 @@ export const RangeInput = ({ max }: IRangeInput) => {
             </div>
             <input
                 type="range"
-                min={0}
+                min={min}
                 max={maxValue || 0}
                 step={Math.ceil(numValue / 10000)}
                 value={numValue}

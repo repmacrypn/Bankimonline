@@ -29,7 +29,9 @@ export const SearchBlock = () => {
                 handleInputChange={handleInputChange}
             />
             <RangeInput
+                min={0}
                 max={inputValue}
+                defaultValue={500000}
             />
         </div>
     )
